@@ -2,7 +2,7 @@ services:
   app:
     build: .
     container_name: chat-with-PDFs
-    command:
+    command: python ./src/app.py
     ports:
       - 8080:8080
       - 5678:5678
